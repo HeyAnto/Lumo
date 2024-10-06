@@ -46,21 +46,29 @@ section {
 }
 
 .about-footer {
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: flex-start;
-padding: 60px 0px;
-gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 60px 0px;
+  gap: 5px;
 
-width: 100%;
+  width: 100%;
 }
 
 .credit {
-display: flex;
-flex-direction: row;
-justify-content: center;
-align-items: center;
-padding: 0px 0px 0px 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 0px 0px 5px;
 }
 
+/* RESPONSIVE */
+
+@media screen and (max-width: 530px) {
+  .about-section {
+    width: auto;
+    max-width: 530px;
+  }
+}
