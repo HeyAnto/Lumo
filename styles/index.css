@@ -1,0 +1,83 @@
+section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px;
+
+  height: 100vh;
+}
+
+.intro {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 50px;
+
+  max-width: 500px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.home-logo {
+  max-width: 100%;
+  max-height: 100%;
+
+  animation: logoAnimation 2s ease forwards;
+  transform-origin: left center;
+  animation-delay: 0.5s;
+}
+
+.info-p {
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+  animation-delay: 2s;
+}
+
+.CTA {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+
+  opacity: 0;
+  animation: slideUp 1s ease forwards;
+  animation-delay: 2.4s;
+}
+
+/* LOGO ANIMATION */
+
+@keyframes logoAnimation {
+  0% {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  50% {
+    max-width: 100%;
+    max-height: 100%;
+  }
+  100% {
+    max-width: 150px;
+    max-height: 40px;
+  }
+}
+
+/* BLOC ANIMATION */
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(50px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ILLUSTRATION ANIMATION */
